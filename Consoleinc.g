@@ -72,5 +72,58 @@ end
 
 end
 
-// pour corriger un énorme bug au moment de LINK :
-procedure __main = begin end
+
+ procedure __main = begin end
+
+
+
+
+prototype  procedure malloc return  uint64_t =  begin 
+
+
+argument begin 
+
+
+argument uint64_t size; 
+
+end 
+
+end
+
+
+
+prototype procedure free = begin 
+
+
+argument begin 
+
+argument ptr uint64_t ptr_; 
+
+
+
+end
+
+
+end
+
+
+prototype procedure memset return  uint64_t = begin 
+
+argument begin 
+
+
+argument ptr uint64_t p;
+argument uint32_t c;
+argument uint64_t size;
+
+end
+
+
+end
+
+global uint64_t NULL = 0;
+
+
+global uint32_t ZER0_32 = cast uint32_t 0;
+
+
